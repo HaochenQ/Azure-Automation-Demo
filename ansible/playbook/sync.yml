@@ -1,0 +1,11 @@
+---
+- hosts: virtualmachines
+  become: yes
+  tasks:
+    - name: "sync website"
+      ansible.builtin.copy:
+        src: ../site/index.html
+        dest: /var/www/{{ domain }}
+        owner: root
+        group: root
+        mode: "0644"

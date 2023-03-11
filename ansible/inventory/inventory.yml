@@ -1,0 +1,6 @@
+virtualmachines:
+  hosts: 20.211.39.116
+  vars:
+    domain: howardtest.australiaeast.cloudapp.azure.com
+    ansible_user: azureuser
+    ansible_ssh_private_key_file: ./id_rsa
